@@ -3,6 +3,7 @@ import {Route, Routes} from 'react-router';
 import HomePage from './pages/HomePage';
 import CreatePage from './pages/CreatePage';
 import NoteDetailPage from './pages/NoteDetailPage';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/create' element={<CreatePage/>}></Route>
         <Route path='/note/:id' element={<NoteDetailPage/>}></Route>
       </Routes>
+      <Footer/>
     </div>
   )
 }
